@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047D45182893FC7D00D7C8F2 /* JmhcthulhumbusarcadeRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 047D45172893FC7D00D7C8F2 /* JmhcthulhumbusarcadeRegular.otf */; };
+		047D451C28940EF100D7C8F2 /* screenshot 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D451928940EF100D7C8F2 /* screenshot 01.png */; };
+		047D451D28940EF100D7C8F2 /* screenshot 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D451A28940EF100D7C8F2 /* screenshot 02.png */; };
+		047D451E28940EF100D7C8F2 /* screenshot 03.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D451B28940EF100D7C8F2 /* screenshot 03.png */; };
 		04A807A5289108EF004534EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A807A4289108EF004534EB /* AppDelegate.swift */; };
 		04A807A7289108EF004534EB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A807A6289108EF004534EB /* art.scnassets */; };
 		04A807A9289108EF004534EB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A807A8289108EF004534EB /* GameViewController.swift */; };
 		04A807AC289108EF004534EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A807AA289108EF004534EB /* Main.storyboard */; };
 		04A807AE289108F0004534EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A807AD289108F0004534EB /* Assets.xcassets */; };
 		04A807B1289108F0004534EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A807AF289108F0004534EB /* LaunchScreen.storyboard */; };
+		04DAFCDB2893C6CE00E3C68B /* Gamepixies.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DAFCDA2893C6CE00E3C68B /* Gamepixies.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047D45172893FC7D00D7C8F2 /* JmhcthulhumbusarcadeRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JmhcthulhumbusarcadeRegular.otf; sourceTree = "<group>"; };
+		047D451928940EF100D7C8F2 /* screenshot 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot 01.png"; sourceTree = "<group>"; };
+		047D451A28940EF100D7C8F2 /* screenshot 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot 02.png"; sourceTree = "<group>"; };
+		047D451B28940EF100D7C8F2 /* screenshot 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot 03.png"; sourceTree = "<group>"; };
 		04A807A1289108EF004534EB /* game proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "game proj.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A807A4289108EF004534EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A807A6289108EF004534EB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -23,6 +32,8 @@
 		04A807AB289108EF004534EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A807AD289108F0004534EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A807B0289108F0004534EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04DAFCDA2893C6CE00E3C68B /* Gamepixies.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gamepixies.ttf; sourceTree = "<group>"; };
+		04DAFCDC2893CC3100E3C68B /* game-proj-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "game-proj-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047D451F28940F1700D7C8F2 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				047D451928940EF100D7C8F2 /* screenshot 01.png */,
+				047D451A28940EF100D7C8F2 /* screenshot 02.png */,
+				047D451B28940EF100D7C8F2 /* screenshot 03.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		04A80798289108EF004534EB = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +76,9 @@
 		04A807A3289108EF004534EB /* game proj */ = {
 			isa = PBXGroup;
 			children = (
+				047D451F28940F1700D7C8F2 /* Screenshots */,
+				04DAFCDC2893CC3100E3C68B /* game-proj-Info.plist */,
+				04DAFCD72893C64B00E3C68B /* Font */,
 				04A807A4289108EF004534EB /* AppDelegate.swift */,
 				04A807A6289108EF004534EB /* art.scnassets */,
 				04A807A8289108EF004534EB /* GameViewController.swift */,
@@ -63,6 +87,15 @@
 				04A807AF289108F0004534EB /* LaunchScreen.storyboard */,
 			);
 			path = "game proj";
+			sourceTree = "<group>";
+		};
+		04DAFCD72893C64B00E3C68B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				047D45172893FC7D00D7C8F2 /* JmhcthulhumbusarcadeRegular.otf */,
+				04DAFCDA2893C6CE00E3C68B /* Gamepixies.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A807A7289108EF004534EB /* art.scnassets in Resources */,
+				047D45182893FC7D00D7C8F2 /* JmhcthulhumbusarcadeRegular.otf in Resources */,
 				04A807B1289108F0004534EB /* LaunchScreen.storyboard in Resources */,
 				04A807AE289108F0004534EB /* Assets.xcassets in Resources */,
+				047D451D28940EF100D7C8F2 /* screenshot 02.png in Resources */,
+				047D451E28940EF100D7C8F2 /* screenshot 03.png in Resources */,
 				04A807AC289108EF004534EB /* Main.storyboard in Resources */,
+				04DAFCDB2893C6CE00E3C68B /* Gamepixies.ttf in Resources */,
+				047D451C28940EF100D7C8F2 /* screenshot 01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B3X5Z84XW5;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "game-proj-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,6 +354,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B3X5Z84XW5;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "game-proj-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -1,22 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gamepixies.ttf">
+            <string>GamePixies</string>
+        </array>
+        <array key="JmhcthulhumbusarcadeRegular.otf">
+            <string>JMHCthulhumbusArcade-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </sceneKitView>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="game_proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fv4-Fy-QBp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uew-cr-tyt">
+                                <rect key="frame" x="0.0" y="0.0" width="434" height="896"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQK-Cw-Hhw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="34.666666666666657"/>
+                                <string key="text">SCORE: 0
+</string>
+                                <fontDescription key="fontDescription" name="GamePixies" family="GamePixies" pointSize="33"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArL-m3-UHS">
+                                <rect key="frame" x="61" y="401" width="292" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="JMHCthulhumbusArcade-Regular" family="JMH Cthulhumbus Arcade" pointSize="40"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcC-7q-zio">
+                                <rect key="frame" x="113" y="457" width="189" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GamePixies" family="GamePixies" pointSize="26"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S22-um-WFu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Uew-cr-tyt" secondAttribute="bottom" id="7HS-4e-ZhW"/>
+                            <constraint firstItem="Uew-cr-tyt" firstAttribute="trailing" secondItem="fv4-Fy-QBp" secondAttribute="trailing" constant="20" symbolic="YES" id="CMT-kY-2CK"/>
+                            <constraint firstItem="S22-um-WFu" firstAttribute="trailing" secondItem="jQK-Cw-Hhw" secondAttribute="trailing" id="bJi-Ce-8JV"/>
+                            <constraint firstItem="jQK-Cw-Hhw" firstAttribute="top" secondItem="S22-um-WFu" secondAttribute="top" id="h9q-vi-3LD" userLabel="SCORE: 0 .top = Safe Area.top"/>
+                            <constraint firstItem="Uew-cr-tyt" firstAttribute="top" secondItem="fv4-Fy-QBp" secondAttribute="top" id="mME-Wr-CKN"/>
+                            <constraint firstItem="Uew-cr-tyt" firstAttribute="leading" secondItem="fv4-Fy-QBp" secondAttribute="leading" id="oWQ-wv-Wqm"/>
+                            <constraint firstItem="jQK-Cw-Hhw" firstAttribute="leading" secondItem="S22-um-WFu" secondAttribute="leading" id="wNL-kJ-UxW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="finalScore" destination="LcC-7q-zio" id="1Bj-bp-O9c"/>
+                        <outlet property="gameOverLabel" destination="ArL-m3-UHS" id="Irn-eL-U1U"/>
+                        <outlet property="scnView" destination="Uew-cr-tyt" id="Vv6-95-erw"/>
+                        <outlet property="scoreLabel" destination="jQK-Cw-Hhw" id="aAT-g6-ULf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="0.0" y="65.625"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
