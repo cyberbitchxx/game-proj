@@ -1,4 +1,4 @@
-# game-proj
+# PlaneBuster
 Been playing around and wrote a simple game. Don't be judgeful, it's my first one)
 
 ## Screenshots
