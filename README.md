@@ -1,8 +1,12 @@
-# PlaneBuster
-Been playing around and wrote a simple game for catching planes!
+# Games
+This repository allows to browse all the games projects I developed.
 
-## Screenshots
+## Plane Buster
+My first iOS arcade game where players tap on increasingly fast approaching planes before they reach the screen. Score points for each plane tapped without missing one. Game over when a plane is missed. View your score and top record when finished.
 
-![Screenshot 1](https://github.com/cyberbitchxx/game-proj/blob/main/game%20proj/Screenshots/screenshot%2001%20.png?raw=true)
-![Screenshot 2](https://github.com/cyberbitchxx/game-proj/blob/main/game%20proj/Screenshots/screenshot%2002%20.png?raw=true)
-![Screenshot 3](https://github.com/cyberbitchxx/game-proj/blob/main/game%20proj/Screenshots/screenshot%2003.png?raw=true)
+### Screen recordings
+#### The game
+![](https://github.com/cyberbitrixx/Games/blob/main/plane-buster1.gif)
+
+#### Game over
+![](https://github.com/cyberbitrixx/Games/blob/main/plane-buster.gif)
